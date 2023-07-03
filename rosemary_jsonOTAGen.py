@@ -42,7 +42,7 @@ with open(hash_file_path, 'r') as hash_file:
     file_hash = hash_file.readline().split()[0]
 
 data = {
-    "error": false,
+    "error": False,
     "version": version,
     "filename": filename,
     "datetime": build_date,
@@ -50,11 +50,11 @@ data = {
     "url": url,
     "github_releases_url": "PLACEHOLDER",
     "fastboot_package_url": "PLACEHOLDER",
-    "filehash": file_hash
+    "filehash": file_hash,
     "id": id,
     "maintainers": [
         {
-            "main_maintainer": true,
+            "main_maintainer": True,
             "github_username": maintainer_github_username,
             "name": maintainer_name
         }
